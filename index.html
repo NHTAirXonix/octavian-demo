@@ -39,20 +39,19 @@
                 font-size: 6rem;
             }
 
-            .fox {
-                grid-column: 3;
-                grid-row: 3;
-                align-self: end;
-                justify-self: start;
-                position: relative;
-            }
+			audio {
 
-            .tree {
-                align-self: end;
-                justify-self: end;
-                grid-column: 1;
-                grid-row: 3;
-            }
+				opacity: 0%; 
+				z-index: 9; 
+				float: right;
+			}
+
+			audio:hover {
+				opacity: 90%; 
+				z-index: 9; 
+				float: right;
+			}	
+
     </style>
 
 </HEAD>
@@ -60,12 +59,14 @@
 
 <BODY style="width: 100vw;height: 100vh; padding: 0;margin: 0;">
 
-<div id="particles-js" class="snow"></div>
-	<div class="trees">
-		<div class="merry">
-		</div>
-</div>
+<div id="particles-js" class="snow" style="z-index: 0;"></div>
 
+	<div class="trees" style="z-index: 0;">
+	<div class="merry" style="z-index: 0;" ></div>
+	<audio  controls autoplay loop>
+		<source src="bbb.mp3" type="audio/mp3"></source>
+	</audio>
+</div>
 
 
 
@@ -73,6 +74,7 @@
 </BODY>
 
 <script>
+
     particlesJS("particles-js", {
 	particles: {
 		number: {
