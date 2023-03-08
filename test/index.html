@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+
+<HEAD>
+
+    <TITLE> New Document </TITLE>
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
+    <style>
+       @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas");
+            .snow {
+                position: absolute;
+                z-index: 100;
+                width: 100%;
+                height: 100%;
+            }
+
+            .trees {
+                background-repeat: no-repeat;
+                width: 100vw;
+                height: 100vh;
+                background: url(https://lh3.googleusercontent.com/J9ob_MypldoGPwIZquU3lAmjN6KcDzzyLgVqIweUhr5sAI1toMLAD_WuVRRBuuS1IwKzVRsorXKo0ifMzt8IpLdkble_QFSUHaHd8-T89sLztJnsjn2OyuYvQmr76HLWkSojflSfRuucyuPb3lu5RvHGKC7egKZhDU5idMEPRxgZMc2vzLt644qOg_l1DS85bGXFPwxLMnT0eQGHzl5pMQgjqs4G5hYDIius9e3-KKGHzQSrNKpZXgE3dEYHkTIGFQJ3MzOEx4FRdrSXj6AD2R7bDxPglvZZepaqy0HcDrkhBMir8sloKrDeg6WJTjMSBTwfXe4Pwj1C0d-2lipOhx8X_SMCnZK1b2EDnCWYj95eg3uv-CtuttxwMlBbR8XfMJPns8xt8CgFxT5WSwvvykU136ibdvs5rrtGeb4VrROuYPF_Uxvp1CE8pRu5PNaxVzRM3Dfj0-cU8io1Skay95jgJHlb1JD4lPmJXmobF3LWXdcWC-zG5LS9xSiT1xuj1wqgXewvjTVV0XXawe7SeWytwtpr5PkPmwpwMS1LLjR5flpaSw43qde8TrAOd_LJBL-oGAvn6aVjA1rjU4-508brxZhdlXNtUtJELIyFhvuqBE_x0OEQc9mglEnzsFu1F4Vq_B1tti6gXhCrAWYYv0e3SkU5tgUlTxfmFH2tw77nqtHkQBd8c4vA6KyJkiuVnyFRoeo54ApqDXt-xeNuEMQPRe1bcURAgl4F0Zs5IozP8be3aDUb8aHbrvxjEQubfn44GBpdXfliJPV4lJkAmXeLux4iOG14jRP4GVU4_BtZ5pkHSEf_Ywx3EKFMbcAP4YdpiQBZDq-JP94i4bBh4J3EMjHse2skvxb1EIMfHX6qcEQhRCmiTFsyz-lYseiRy_Kjl087Kcsr4hS0NEYF6xA__-b5BtFZeLF39MGnJRFCGYL1FLlcWJJanR0NB-QRN3CkbWwcfc1v4h1d3WI=w1829-h1007-no?authuser=0) no-repeat center center fixed; 
+                background-size: cover;
+            }
+
+            .merry {
+                color: #c84257;
+                font-family: "Mountains of Christmas";
+                text-align: center;
+                grid-row: 1;
+                grid-column: 1/4;
+                align-self: center;
+                justify-self: center;
+                font-size: 6rem;
+            }
+
+			audio {
+
+				opacity: 0%; 
+				z-index: 9; 
+				float: right;
+			}
+
+			audio:hover {
+				opacity: 90%; 
+				z-index: 9; 
+				float: right;
+			}	
+
+    </style>
+
+</HEAD>
+
+
+<BODY style="width: 100vw;height: 100vh; padding: 0;margin: 0;">
+
+<div id="particles-js" class="snow" style="z-index: 0;"></div>
+
+	<div class="trees" style="z-index: 0;">
+	<div class="merry" style="z-index: 0;" ></div>
+	<audio  controls autoplay loop>
+		<source src="bbb.mp3" type="audio/mp3"></source>
+	</audio>
+</div>
+
+
+
+
+</BODY>
+
+<script>
+
+    particlesJS("particles-js", {
+	particles: {
+		number: {
+			value: 400,
+			density: {
+				enable: true,
+				value_area: 800
+			}
+		},
+		color: {
+			value: "#fff"
+		},
+		shape: {
+			type: "circle",
+			stroke: {
+				width: 0,
+				color: "#000000"
+			},
+			polygon: {
+				nb_sides: 5
+			}
+		},
+		opacity: {
+			value: 1,
+			random: false,
+			anim: {
+				enable: false,
+				speed: 1,
+				opacity_min: 0.1,
+				sync: false
+			}
+		},
+		size: {
+			value: 10,
+			random: true,
+			anim: {
+				enable: false
+			}
+		},
+		line_linked: {
+			enable: false
+		},
+		move: {
+			enable: true,
+			speed: 6,
+			direction: "bottom",
+			random: false,
+			straight: false,
+			out_mode: "out",
+			bounce: false,
+			attract: {
+				enable: false,
+				rotateX: 600,
+				rotateY: 1200
+			}
+		}
+	},
+	interactivity: {
+		detect_on: "canvas",
+		events: {
+			onhover: {
+				enable: true,
+				mode: "repulse"
+			},
+			onclick: {
+				enable: true,
+				mode: "repulse"
+			},
+			resize: true
+		},
+		modes: {
+			grab: {
+				distance: 400,
+				line_linked: {
+					opacity: 0.5
+				}
+			},
+			bubble: {
+				distance: 100,
+				size: 4,
+				duration: 0.3,
+				opacity: 1,
+				speed: 3
+			},
+			repulse: {
+				distance: 100,
+				duration: 0.4
+			},
+			push: {
+				particles_nb: 4
+			},
+			remove: {
+				particles_nb: 2
+			}
+		}
+	},
+	retina_detect: true
+});
+</script>
+
+</HTML>
